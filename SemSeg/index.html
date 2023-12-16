@@ -127,21 +127,21 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/coco_qualitative.pdf" alt="coco qulitative"/>
+            <img src="static/images/coco_qualitative.jpg" alt="coco qulitative" width="70%"/>
             <h2 class="subtitle has-text-centered">
               Qualitative comparisons between SemSeg and other methods on COCO.
             </h2>
           </div>
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/graspnet_qualitative.pdf" alt="graspnet qualitative"/>
+            <img src="static/images/graspnet_qualitative.jpg" alt="graspnet qualitative" width="70%"/>
             <h2 class="subtitle has-text-centered">
               Qualitative comparisons between SemSeg and other methods on the GraspNet OSIS benchmark.
             </h2>
           </div>
           <div class="item">
             <!-- Your image here -->
-            <img src="static/images/mask_quality.pdf" alt="mask quality"/>
+            <img src="static/images/mask_quality.jpg" alt="mask quality" width="45%"/>
             <h2 class="subtitle has-text-centered">
               Qualitative comparisons of mask quality between SemSeg and other methods on the GraspNet OSIS benchmark.
             </h2>
@@ -158,161 +158,165 @@
     <div class="container is-max-desktop">
       <h2 class="title is-3">Quantitative Results</h2>
       
-      <!-- <div class="columns is-centered" style="margin-top: 30px; margin-bottom: 30px;">
-        <table class="table is-bordered is-striped" style="width: 100%;">
-          <caption class="is-size-5">Comparison results on COCO.</caption>
-          <tr>
-            <td></td>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AR}_\text{unk}^{10}\)</td>
-            <td>\(\text{AR}_\text{unk}^{30}\)</td>
-            <td>\(\text{AR}_\text{unk}^{100}\)</td>
-          </tr>
-          <tr>
-            <td align="left">OLN-Mask+PROSER</td>
-            <td>2604</td>
-            <td>23.9</td>
-            <td>6.8</td>
-            <td>7.9</td>
-            <td>8.0</td>
-          </tr>
-          <tr>
-            <td align="left">OpenDet+CA-Mask</td>
-            <td>3181</td>
-            <td>29.8</td>
-            <td>5.9</td>
-            <td>6.5</td>
-            <td>6.5</td>
-          </tr>
-          <tr>
-            <td align="left">SemSeg</td>
-            <td>2536</td>
-            <td>30.1</td>
-            <td>11.7</td>
-            <td>16.7</td>
-            <td>19.0</td>
-          </tr>
-        </table>
-      </div> -->
-      
-      <!-- <div class="columns is-centered" style="margin-bottom: 30px;"> -->
-        <table class="table is-bordered is-striped" style="width: 100%;">
-          <caption class="is-size-5">Comparison results on GraspNet-OSIS-T1.</caption>
-          <tr>
-            <td rowspan="2"></td>
-            <td colspan="3">GraspNet-Test-1</td>
-            <td colspan="3">GraspNet-Test-2</td>
-            <td colspan="3">GraspNet-Test-3</td>
-          </tr>
-          <tr>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AP}_\text{unk}\)</td>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AP}_\text{unk}\)</td>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AP}_\text{unk}\)</td>
-          </tr>
-          <tr>
-            <td align="left">OLN-Mask+PROSER</td>
-            <td>20961</td>
-            <td>59.6</td>
-            <td>33.2</td>
-            <td>65491</td>
-            <td>55.9</td>
-            <td>39.1</td>
-            <td>94131</td>
-            <td>54.9</td>
-            <td>39.4</td>
-          </tr>
-          <tr>
-            <td align="left">OpenDet+CA-Mask</td>
-            <td>100225</td>
-            <td>63.4</td>
-            <td>21.4</td>
-            <td>237535</td>
-            <td>58.7</td>
-            <td>31.9</td>
-            <td>331990</td>
-            <td>57.4</td>
-            <td>32.0</td>
-          </tr>
-          <tr>
-            <td align="left">SemSeg</td>
-            <td>17598</td>
-            <td>63.6</td>
-            <td>37.2</td>
-            <td>58111</td>
-            <td>60.7</td>
-            <td>41.7</td>
-            <td>80546</td>
-            <td>60.1</td>
-            <td>42.2</td>
-          </tr>
-        </table>
+      <!-- <div class="table-container"> -->
+
+        <!-- <div class="columns is-centered" style="margin-top: 30px; margin-bottom: 30px;"> -->
+          <table class="table is-bordered is-striped" style="width: 100%;">
+            <caption class="is-size-5">Comparison results on COCO.</caption>
+            <tr>
+              <td></td>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AR}_\text{unk}^{10}\)</td>
+              <td>\(\text{AR}_\text{unk}^{30}\)</td>
+              <td>\(\text{AR}_\text{unk}^{100}\)</td>
+            </tr>
+            <tr>
+              <td align="left">OLN-Mask+PROSER</td>
+              <td>2604</td>
+              <td>23.9</td>
+              <td>6.8</td>
+              <td>7.9</td>
+              <td>8.0</td>
+            </tr>
+            <tr>
+              <td align="left">OpenDet+CA-Mask</td>
+              <td>3181</td>
+              <td>29.8</td>
+              <td>5.9</td>
+              <td>6.5</td>
+              <td>6.5</td>
+            </tr>
+            <tr>
+              <td align="left">SemSeg</td>
+              <td>2536</td>
+              <td>30.1</td>
+              <td>11.7</td>
+              <td>16.7</td>
+              <td>19.0</td>
+            </tr>
+          </table>
+        <!-- </div> -->
+        
+        <!-- <div class="columns is-centered" style="margin-bottom: 30px;"> -->
+          <table class="table is-bordered is-striped" style="width: 100%;">
+            <caption class="is-size-5">Comparison results on GraspNet-OSIS-T1.</caption>
+            <tr>
+              <td rowspan="2"></td>
+              <td colspan="3">GraspNet-Test-1</td>
+              <td colspan="3">GraspNet-Test-2</td>
+              <td colspan="3">GraspNet-Test-3</td>
+            </tr>
+            <tr>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AP}_\text{unk}\)</td>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AP}_\text{unk}\)</td>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AP}_\text{unk}\)</td>
+            </tr>
+            <tr>
+              <td align="left">OLN-Mask+PROSER</td>
+              <td>20961</td>
+              <td>59.6</td>
+              <td>33.2</td>
+              <td>65491</td>
+              <td>55.9</td>
+              <td>39.1</td>
+              <td>94131</td>
+              <td>54.9</td>
+              <td>39.4</td>
+            </tr>
+            <tr>
+              <td align="left">OpenDet+CA-Mask</td>
+              <td>100225</td>
+              <td>63.4</td>
+              <td>21.4</td>
+              <td>237535</td>
+              <td>58.7</td>
+              <td>31.9</td>
+              <td>331990</td>
+              <td>57.4</td>
+              <td>32.0</td>
+            </tr>
+            <tr>
+              <td align="left">SemSeg</td>
+              <td>17598</td>
+              <td>63.6</td>
+              <td>37.2</td>
+              <td>58111</td>
+              <td>60.7</td>
+              <td>41.7</td>
+              <td>80546</td>
+              <td>60.1</td>
+              <td>42.2</td>
+            </tr>
+          </table>
+        <!-- </div> -->
+        
+        <!-- <div class="columns is-centered" style="margin-bottom: 30px;"> -->
+          <table class="table is-bordered is-striped" style="width: 100%;">
+            <caption class="is-size-5">Comparison results on GraspNet-OSIS-T2.</caption>
+            <tr>
+              <td rowspan="2"></td>
+              <td colspan="3">GraspNet-Test-4</td>
+              <td colspan="3">GraspNet-Test-5</td>
+              <td colspan="3">GraspNet-Test-6</td>
+            </tr>
+            <tr>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AP}_\text{unk}\)</td>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AP}_\text{unk}\)</td>
+              <td>AOSE</td>
+              <td>\(\text{AP}_\text{k}\)</td>
+              <td>\(\text{AP}_\text{unk}\)</td>
+            </tr>
+            <tr>
+              <td align="left">OLN-Mask+PROSER</td>
+              <td>7999</td>
+              <td>61.0</td>
+              <td>31.4</td>
+              <td>36362</td>
+              <td>55.9</td>
+              <td>40.6</td>
+              <td>56067</td>
+              <td>54.4</td>
+              <td>39.5</td>
+            </tr>
+            <tr>
+              <td align="left">OpenDet+CA-Mask</td>
+              <td>39265</td>
+              <td>63.9</td>
+              <td>21.4</td>
+              <td>127570</td>
+              <td>57.1</td>
+              <td>35.4</td>
+              <td>192734</td>
+              <td>54.9</td>
+              <td>33.5</td>
+            </tr>
+            <tr>
+              <td align="left">SemSeg</td>
+              <td>6971</td>
+              <td>64.3</td>
+              <td>37.4</td>
+              <td>33213</td>
+              <td>59.9</td>
+              <td>44.0</td>
+              <td>48885</td>
+              <td>59.1</td>
+              <td>43.0</td>
+            </tr>
+          </table>
+        <!-- </div> -->
+
       <!-- </div> -->
-      <!--
-      <div class="columns is-centered" style="margin-bottom: 30px;">
-        <table class="table is-bordered is-striped"">
-          <caption class="is-size-5">Comparison results on GraspNet-OSIS-T2.</caption>
-          <tr>
-            <td rowspan="2"></td>
-            <td colspan="3">GraspNet-Test-4</td>
-            <td colspan="3">GraspNet-Test-5</td>
-            <td colspan="3">GraspNet-Test-6</td>
-          </tr>
-          <tr>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AP}_\text{unk}\)</td>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AP}_\text{unk}\)</td>
-            <td>AOSE</td>
-            <td>\(\text{AP}_\text{k}\)</td>
-            <td>\(\text{AP}_\text{unk}\)</td>
-          </tr>
-          <tr>
-            <td align="left">OLN-Mask+PROSER</td>
-            <td>7999</td>
-            <td>61.0</td>
-            <td>31.4</td>
-            <td>36362</td>
-            <td>55.9</td>
-            <td>40.6</td>
-            <td>56067</td>
-            <td>54.4</td>
-            <td>39.5</td>
-          </tr>
-          <tr>
-            <td align="left">OpenDet+CA-Mask</td>
-            <td>39265</td>
-            <td>63.9</td>
-            <td>21.4</td>
-            <td>127570</td>
-            <td>57.1</td>
-            <td>35.4</td>
-            <td>192734</td>
-            <td>54.9</td>
-            <td>33.5</td>
-          </tr>
-          <tr>
-            <td align="left">SemSeg</td>
-            <td>6971</td>
-            <td>64.3</td>
-            <td>37.4</td>
-            <td>33213</td>
-            <td>59.9</td>
-            <td>44.0</td>
-            <td>48885</td>
-            <td>59.1</td>
-            <td>43.0</td>
-          </tr>
-        </table>
-      </div> -->
 
     </div>
   </section>
