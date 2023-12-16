@@ -133,5 +133,8 @@ body {
   font-size: smaller;
 }
 
-
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
 
