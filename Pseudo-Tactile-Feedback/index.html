@@ -72,8 +72,8 @@
               <span class="author-block">Yue Wang</a><sup>1</sup></span>
               </div>
 
-                  <div class="is-size-5 publication-authors" style="margin-bottom: 12px;>
-                    <span class="author-block"><sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Huawei</span>
+                  <div class="is-size-5 publication-authors" style="margin-bottom: 12px;">
+                    <span class="author-block"><sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Huawei</span></span>
                     <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -147,7 +147,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Grasp-based manipulation tasks are fundamental to robots interacting with their environments, yet gripper state ambiguity significantly reduces the robustness of imitation learning policies for these tasks. Data-driven solutions face the challenge of high real-world data costs, while simulation data, despite its low costs, is limited by the sim-to-real gap. We identify the root cause of gripper state ambiguity as the lack of tactile feedback. To address this, we propose a novel approach employing pseudo-tactile as feedback, inspired by the idea of using a force-controlled gripper as a tactile sensor. This method enhances policy robustness without additional data collection and hardware involvement, while providing a noise-free binary gripper state observation for the policy and thus facilitating pure simulation learning to unleash the power of simulation. Experimental results across three real-world grasp-based tasks demonstrate the necessity, effectiveness, and efficiency of our approach.
           </p>
         </div>
       </div>
@@ -155,6 +155,758 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Pure Simulation Training</h2>
+        <h3 class="title is-4 has-text-centered">Sim Demos Collection</h3>
+        <p class="content has-text-centered">
+          We design state-based expert policies to collect demos in simulation automatically.
+        </p>
+        <div class="columns is-centered">
+          <video style="width:30%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim/demo/lift_sim_demo.mp4" type="video/mp4">
+          </video>
+          <video style="width:30%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim/demo/drawer_sim_demo.mp4" type="video/mp4">
+          </video>
+          <video style="width:30%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim/demo/oven_sim_demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <h3 class="title is-4 has-text-centered">Eval in Sim</h3>
+        <p class="content has-text-centered">
+          The performance of the learned policy in simulation.
+        </p>
+        <div class="columns is-centered">
+          <video style="width:30%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim/eval/lift_sim_eval.mp4" type="video/mp4">
+          </video>
+          <video style="width:30%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim/eval/drawer_sim_eval.mp4" type="video/mp4">
+          </video>
+          <video style="width:30%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim/eval/oven_sim_eval.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Real-World Pick-and-Lift</h2>
+        <h3 class="title is-4 has-text-centered">Eval without Gripper Disturbance</h3>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with 50 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/wo_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">RDT-1B Finetuned with 50 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/wo_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with Pure Sim Training</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/1.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/2.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/3.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/5.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/6.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/7.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/wo_dist/8.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        
+        <h3 class="title is-4 has-text-centered">Eval wit Gripper Disturbance</h3>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with 50 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/9(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/10(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/11(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/12(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/13(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/14(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/15(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_real/w_dist/16(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">RDT-1B Finetuned with 50 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/w_dist/9(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/w_dist/10(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/w_dist/11(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/rdt/w_dist/12(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with Pure Sim Training</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/9.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/10.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/11.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/12.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/13.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/14.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/15.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/lift/dp_sim/w_dist/16.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Real-World Drawer-Opening</h2>
+        <h3 class="title is-4 has-text-centered">Eval without Gripper Disturbance</h3>
+
+        <h4 class="title is-5 has-text-centered">ACT with 60 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with 60 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/wo_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">RDT-1B Finetuned with 60 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/wo_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with Pure Sim Training</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/1.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/2.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/3.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/5.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/6.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/7.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/wo_dist/8.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+
+        <h3 class="title is-4 has-text-centered">Eval wit Gripper Disturbance</h3>
+
+        <h4 class="title is-5 has-text-centered">ACT with 60 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/w_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/w_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/w_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/act/w_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with 60 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/9(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/10(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/11(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/12(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/13(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/14(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/15(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_real/w_dist/16(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">RDT-1B Finetuned with 60 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/9(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/10(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/11(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/12(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/13(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/14(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/15(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/rdt/w_dist/16(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with Pure Sim Training</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/9.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/10.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/11.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/12.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/13.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/14.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/15.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/drawer/dp_sim/w_dist/16.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Real-World Oven-Opening</h2>
+        <h3 class="title is-4 has-text-centered">Eval without Gripper Disturbance</h3>
+
+        <h4 class="title is-5 has-text-centered">ACT with 54 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/wo_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with 54 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">RDT-1B Finetuned with 54 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/wo_dist/1(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/wo_dist/2(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/wo_dist/3(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/wo_dist/4(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with Pure Sim Training</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/1.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/2.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/3.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/5.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/6.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/7.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/wo_dist/8.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+
+        <h3 class="title is-4 has-text-centered">Eval wit Gripper Disturbance</h3>
+
+        <h4 class="title is-5 has-text-centered">ACT with 54 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/9(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/10(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/11(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/12(1).mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/13(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/14(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/15(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/act/w_dist/16(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with 54 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/w_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/w_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/w_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_real/w_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">RDT-1B Finetuned with 54 Real-World Demos</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/w_dist/5(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/w_dist/6(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/w_dist/7(1).mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/rdt/w_dist/8(1).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy with Pure Sim Training</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/9.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/10.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/11.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/12.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/13.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/14.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/15.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/compare/oven/dp_sim/w_dist/16.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Ablation - Gripper Randomization</h2>
+        <p class="content has-text-justified">
+          In ablation studies, we perform gripper randomization during sim demos collection to include cases where the gripper is closed without successfully grasping the object. We use such dataset to train ACT, DP, and RDT-1B (finetune). The results showed that while disturbance resilience was achieved, task accomplishment was severely compromised. When the robot grasps the handle, the policies often fail to perform the expected pulling motion.
+        </p>
+
+        <h4 class="title is-5 has-text-centered">Diffusion Policy (Ablation-2)</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/1.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/2.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/3.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/5.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/6.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/7.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/2/8.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5 has-text-centered">ACT (Ablation-4)</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/1.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/2.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/3.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/5.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/6.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/7.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/4/8.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+        <h4 class="title is-5 has-text-centered">RDT-1B (Ablation-5)</h4>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/1.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/2.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/3.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/4.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/5.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/6.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/7.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/ablation/5/8.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <!-- Image carousel -->
