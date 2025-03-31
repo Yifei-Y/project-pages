@@ -160,6 +160,31 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Overview</h2>
+        <div class="columns is-multiline is-variable is-4">
+          <div class="column is-half">
+            <div class="has-text-centered">
+              <img src="./static/images/pseudo_tactile_new.jpg" alt="pseudo_tactile_new" style="max-width: 80%; height: auto; margin: 0px;">
+            </div>
+            <p class="has-text-justified" style="text-align: justify;">The principle of tactile sensors is that they convert the deformation of sensor material into measurable changes in resistance, capacitance, or visual signals. A force-controlled gripper can act as a tactile sensor providing pseudo-tactile information. We designed a closed-loop gripper controller with pseudo-tactile information as feedback to convert the empty close state into the empty open state, disambiguating gripper state.</p>
+          </div>
+          <div class="column is-half">
+            <div class="has-text-centered">
+              <img src="./static/images/pure_sim.jpg" alt="pure_sim" style="max-width: 81.5%; height: auto; margin: 0px;">
+            </div>
+            <p class="has-text-justified" style="text-align: justify;">Once the gripper state is disambiguated, there is no need to perform gripper disturbance during data collection, and the policy can use the binary gripper state observation, enabling pure simulation training. We design a state-based expert policy for automatic data collection and apply real-to-sim techniques, randomization, and admittance control to mitigate the visual sim-to-real gap and reduce the stress caused by kinematic discrepancies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
         <h2 class="title is-3 has-text-centered">Pure Simulation Training</h2>
         <h3 class="title is-4 has-text-centered">Sim Demos Collection</h3>
         <p class="content has-text-centered">
@@ -197,7 +222,7 @@
 </section>
 
 
-<section class="section hero is-small is-light">
+<section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -295,7 +320,7 @@
         </div>
 
         
-        <h3 class="title is-4 has-text-centered">Eval wit Gripper Disturbance</h3>
+        <h3 class="title is-4 has-text-centered">Eval with Gripper Disturbance</h3>
 
         <h4 class="title is-5 has-text-centered">Diffusion Policy with 50 Real-World Demos</h4>
         <div class="columns is-centered">
@@ -378,7 +403,7 @@
 </section>
 
 
-<section class="section hero is-small">
+<section class="section hero is-small is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -492,7 +517,7 @@
         </div>
         
 
-        <h3 class="title is-4 has-text-centered">Eval wit Gripper Disturbance</h3>
+        <h3 class="title is-4 has-text-centered">Eval with Gripper Disturbance</h3>
 
         <h4 class="title is-5 has-text-centered">ACT with 60 Real-World Demos</h4>
         <div class="columns is-centered">
@@ -605,7 +630,7 @@
 </section>
 
 
-<section class="section hero is-small is-light">
+<section class="section hero is-small">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
@@ -705,7 +730,7 @@
         </div>
         
 
-        <h3 class="title is-4 has-text-centered">Eval wit Gripper Disturbance</h3>
+        <h3 class="title is-4 has-text-centered">Eval with Gripper Disturbance</h3>
 
         <h4 class="title is-5 has-text-centered">ACT with 54 Real-World Demos</h4>
         <div class="columns is-centered">
@@ -804,7 +829,7 @@
 </section>
 
 
-<section class="section hero is-small">
+<section class="section hero is-small is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full">
