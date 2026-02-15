@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DirectionMatters</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Direction Matters: Learning Force Direction <br> Enables Sim-to-Real Contact-Rich Manipulation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yifei-y.github.io" target="_blank">Yifei Yang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  Anzhe Chen<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Zhenjie Zhu<sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://xukechun.github.io" target="_blank">Kechun Xu</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://yunxuanmao.github.io" target="_blank">Yunxuan Mao</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                          Yufei Wei<sup>1</sup>,</span>
+                          <br>
+                          <span class="author-block">
+                            Lu Chen<sup>2</sup>,</span>
+                            <span class="author-block">
+                              Rong Xiong<sup>1,2</sup>,</span>
+                              <span class="author-block">
+                                <a href="https://ywang-zju.github.io" target="_blank">Yue Wang</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                    <span class="author-block"><sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Zhejiang Humanoid Robot Innovation Center</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114260910871438&bvid=BV1DZZxYGEk6&cid=34069088736&p=1&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p class="mb-2">
+            Sim-to-real transfer for contact-rich manipulation remains challenging due to the inherent discrepancy in contact dynamics. While existing methods often rely on costly real-world data or utilize blind compliance through fixed controllers, we propose a framework that leverages expert-designed controller logic for transfer. Inspired by the success of privileged supervision in kinematic tasks, we employ a human-designed finite state machine based position/force controller in simulation to provide privileged guidance. The resulting policy is trained to predict the end-effector pose, contact state, and crucially the desired contact force direction. Unlike force magnitudes, which are highly sensitive to simulation inaccuracies, force directions encode high-level task geometry and remain robust across the sim-to-real gap. At deployment, these predictions configure a force-aware admittance controller. By combining the policy's directional intent with a constant, low-cost manually tuned force magnitude, the system generates adaptive, task-aligned compliance. This tuning is lightweight, typically requiring only a single scalar per contact state. We provide theoretical analysis for stability and robustness to disturbances. Experiments on four real-world tasks, i.e., microwave opening, peg-in-hole, whiteboard wiping, and door opening, demonstrate that our approach significantly outperforms strong baselines in both success rate and robustness.
+          </p>
+          <br>
+          <figure class="image mt-0">
+            <img src="static/images/teaser.jpg" style="width: 90%; height: auto;">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-full-width">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <figure class="image mb-2">
+            <img src="static/images/framework_wide.jpg" style="width: 73%; height: auto;">
+          </figure>
+          <div style="width: 70%; margin: 0 auto;">
+            <p class="mb-0">
+            In simulation, we implement an expert Finite State Machine based on privileged state to generate diverse demonstrations. Identifying force direction and contact state as dynamics-invariant quantities that encode task intent, the policy is trained to predict these signals alongside poses using simulation data. In the real world, the policy outputs configure a force-aware admittance controller, which combines the predicted force direction with a manually specified magnitude to achieve adaptive, task-aligned compliance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+<!-- Sim Data Generation -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Sim Data Generation</h2>
+        <p class="content has-text-justified">
+          We leverage privileged states in simulation to build an Expert Finite State Machine. The FSM switches behavior based on the contact state: During Free Motion, it simply tracks object-centric key poses. During Contact Interaction, it switches to task-specific rules to generate the targets and adopts contact-aware pose tracking. This allows us to automatically generate large-scale, high-quality demonstrations across diverse tasks.
+        </p>
+        <div class="columns is-centered">
+          <video style="width:25%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/microwave_opening.mp4" type="video/mp4">
+          </video>
+          <video style="width:25%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/peg_in_hole.mp4" type="video/mp4">
+          </video>
+          <video style="width:25%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/whiteboard_wiping.mp4" type="video/mp4">
+          </video>
+          <video style="width:25%; height:auto; margin: 2%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/door_opening.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Sim Data Generation -->
+
+<!-- Sim Data Generation -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Real-World Results</h2>
+        <div class="columns is-centered mb-2">
+          <div class="column is-narrow">
+            <div class="is-flex is-align-items-center">
+              <img src="static/images/icon/success.png" style="width: 30px; height: 30px; margin-right: 8px;">
+              <span class="is-size-5">success</span>
+            </div>
+          </div>
+
+          <div class="column is-narrow">
+            <div class="is-flex is-align-items-center">
+              <img src="static/images/icon/insufficient_force.png" style="width: 26px; height: 26px; margin-right: 8px;">
+              <span class="is-size-5">failure due to insufficient force</span>
+            </div>
+          </div>
+
+          <div class="column is-narrow">
+            <div class="is-flex is-align-items-center">
+              <img src="static/images/icon/excessive_force.png" style="width: 30px; height: 30px; margin-right: 8px;">
+              <span class="is-size-5">failure due to excessive force</span>
+            </div>
+          </div>
+
+          <div class="column is-narrow">
+            <div class="is-flex is-align-items-center">
+              <img src="static/images/icon/other_failure.png" style="width: 25px; height: 25px; margin-right: 8px;">
+              <span class="is-size-5">failure due to other reasons</span>
+            </div>
+          </div>
+        </div>
+        <div class="has-text-centered mb-4">
+          <p class="is-size-5">
+            <span style="color: #edadaa; font-weight: bold;">Red line</span> indicates X, 
+            <span style="color: #b2dcb5; font-weight: bold;">Green line</span> indicates Y,  
+            <span style="color: #adcce9; font-weight: bold;">Blue line</span> indicates Z.
+          </p>
+        </div>
+        <div class="has-text-centered mb-6">
+          <div style="display: inline-block; text-align: left;">
+            <p class="is-size-6" style="line-height: 2.0;"> <span style="background-color: #fff3e0; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Yellow region</span> indicates time steps with our predicted contact state = 1
+              <br>
+              <span style="background-color: #ffebee; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Red region</span> indicates time steps with disturbance applied
+              <br>
+              <span style="background-color: #d8f0ce; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Green region</span> indicates time steps when triggering safety stop
+              <br>
+              <span style="background-color: #dddaf4e7; color: #000; padding: 2px 6px; border-radius: 4px; font-weight: bold;">Purple region</span> indicates time steps when microwave door lock is released
+            </p>
+          </div>
+        </div>
+        <h3 class="title is-4 has-text-centered">Microwave Opening without Disturbance</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-one-third">
+            <p class="title is-5">Ours</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/MO_undist/MO_contact_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">E2VLA+M-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/MO_undist/MO_e2vla_M-A_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">E2VLA+L-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/MO_undist/MO_e2vla_L-A_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered mt-4">Microwave Opening with Disturbance</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-one-third">
+            <p class="title is-5">Ours</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/MO_dist/MO_contact_dist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">E2VLA+M-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/MO_dist/MO_e2vla_M-A_dist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">E2VLA+L-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/MO_dist/MO_e2vla_L-A_dist.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Peg-in-Hole without Disturbance</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half">
+            <p class="title is-5">Ours</p>
+            <p class="is-size-6">insertion depth=25mm</p>
+            <p class="is-size-6"><span style="color: #ff0d00; font-weight: bold;">target normal force magnitude=2N</span></p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/PH_undist/PH_contact_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <p class="title is-5">E2VLA+H-A</p>
+            <p class="is-size-6">insertion depth=10mm</p>
+            <p class="is-size-6">&nbsp;</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/PH_undist/PH_e2vla_H-A_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Peg-in-Hole with Disturbance - Lower Hole</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half">
+            <p class="title is-5">Ours</p>
+            <p class="is-size-6">insertion depth=25mm</p>
+            <p class="is-size-6"><span style="color: #ff0d00; font-weight: bold;">target normal force magnitude=2N</span></p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/PH_lower/PH_contact_lower.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <p class="title is-5">E2VLA+H-A</p>
+            <p class="is-size-6">insertion depth=20mm</p>
+            <p class="is-size-6">&nbsp;</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/PH_lower/PH_e2vla_H-A_lower.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Peg-in-Hole with Disturbance - Lift Hole</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half">
+            <p class="title is-5">Ours</p>
+            <p class="is-size-6">insertion depth=25mm</p>
+            <p class="is-size-6"><span style="color: #ff0d00; font-weight: bold;">target normal force magnitude=2N</span></p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/PH_lift/PH_contact_lift.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <p class="title is-5">E2VLA+H-A</p>
+            <p class="is-size-6">&nbsp;</p>
+            <p class="is-size-6">&nbsp;</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/PH_lift/PH_e2vla_H-A_lift.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Whiteboard Wiping without Disturbance</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half">
+            <p class="title is-5">Ours</p>
+            <p class="is-size-6"><span style="color: #ff0d00; font-weight: bold;">target normal force magnitude=4N</span></p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/WW_undist/WW_contact_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <p class="title is-5">E2VLA+H-A</p>
+            <p class="is-size-6">&nbsp;</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/WW_undist/WW_e2vla_H-A_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Whiteboard Wiping with Disturbance - Lower Whiteboard</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half">
+            <p class="title is-5">Ours</p>
+            <p class="is-size-6"><span style="color: #ff0d00; font-weight: bold;">target normal force magnitude=4N</span></p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/WW_lower/WW_contact_lower.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <p class="title is-5">E2VLA+H-A</p>
+            <p class="is-size-6">&nbsp;</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/WW_lower/WW_e2vla_H-A_lower.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Whiteboard Wiping with Disturbance - Lift Whiteboard</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-half">
+            <p class="title is-5">Ours</p>
+            <p class="is-size-6"><span style="color: #ff0d00; font-weight: bold;">target normal force magnitude=4N</span></p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/WW_lift/WW_contact_lift.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-half">
+            <p class="title is-5">E2VLA+H-A</p>
+            <p class="is-size-6">&nbsp;</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/WW_lift/WW_e2vla_H-A_lift.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered">Door Opening without Disturbance</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-one-third">
+            <p class="title is-5">Ours</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/DO_undist/DO_contact_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">$\pi_0$+M-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/DO_undist/DO_pi0_M-A_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">$\pi_0$+L-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/DO_undist/DO_pi0_L-A_undist.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <h3 class="title is-4 has-text-centered mt-4">Door Opening with Disturbance</h3>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-one-third">
+            <p class="title is-5">Ours</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/DO_dist/DO_contact_dist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">$\pi_0$+M-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/DO_dist/DO_pi0_M-A_dist.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="column is-one-third">
+            <p class="title is-5">$\pi_0$+L-A</p>
+            <video style="width:100%; height:auto;" controls muted loading="lazy" autoplay playsinline>
+              <source src="./static/videos/DO_dist/DO_pi0_L-A_dist.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Sim Data Generation -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
