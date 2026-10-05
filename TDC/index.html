@@ -1,279 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
-
-
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-  <title>TDC</title>
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <meta name="description" content="TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation. CoRL 2026.">
+  <meta property="og:title" content="TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation">
+  <meta property="og:description" content="TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation. CoRL 2026.">
+  <meta property="og:image" content="static/images/teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>TDC | CoRL 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/index.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-
-  <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']]
-    },
-    svg: {
-      fontCache: 'global'
-    }
-  };
-  </script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
+  <script src="static/js/experiments.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#abstract">Skip to content</a>
+  <header class="publication-header">
+    <div class="heading-container">
+      <h1 class="publication-title">
+        <span class="publication-title-line"><span class="title-acronym">TDC:</span> Sim-to-Real Transferable Directional Compliance</span>
+        <span class="publication-title-line">for Contact-Rich Manipulation</span>
+      </h1>
+      <div class="publication-authors">
+          <span class="author-block"><a href="https://yifei-y.github.io" target="_blank" rel="noopener noreferrer">Yifei Yang</a><sup>1</sup></span>
+          <span class="author-block">Anzhe Chen<sup>1</sup></span>
+          <span class="author-block">Zhenjie Zhu<sup>1</sup></span>
+          <span class="author-block"><a href="https://xukechun.github.io" target="_blank" rel="noopener noreferrer">Kechun Xu</a><sup>1</sup></span>
+          <span class="author-block"><a href="https://yunxuanmao.github.io" target="_blank" rel="noopener noreferrer">Yunxuan Mao</a><sup>1</sup></span>
+          <span class="author-block">Yufei Wei<sup>1</sup></span>
+          <span class="author-block">Lu Chen<sup>2</sup></span>
+          <span class="author-block">Rong Xiong<sup>1,2</sup></span>
+          <span class="author-block"><a href="https://ywang-zju.github.io" target="_blank" rel="noopener noreferrer">Yue Wang</a><sup>1</sup></span>
+      </div>
+      <div class="publication-affiliations">
+        <span><sup>1</sup> Zhejiang University</span>
+        <span><sup>2</sup> Zhejiang Humanoid Robot Innovation Center</span>
+      </div>
+      <p class="publication-venue">CoRL 2026</p>
+      <nav class="publication-links" aria-label="Paper resources">
+        <a class="resource-link" href="https://arxiv.org/pdf/2602.14174.pdf" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>
+          Paper
+        </a>
+        <a class="resource-link" href="https://arxiv.org/abs/2602.14174" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4 10 16M17 4 7 20"/></svg>
+          arXiv
+        </a>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <section class="page-section intro-video-section" id="overview-video" aria-label="Paper introduction video">
+      <div class="container">
+        <div class="intro-video-frame">
+          <!-- Replace this placeholder with the Bilibili iframe once the upload is available.
+               Give the iframe title="TDC video overview", loading="lazy", and allowfullscreen.
+               Keep autoplay disabled in the player URL. -->
+          <div class="intro-video-placeholder">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="10" width="38" height="28" rx="5"/><path d="m20 18 11 6-11 6Z"/></svg>
+            <p class="intro-video-message">Video coming soon</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="hero">
-    <div class="hero-body">
-      <div class="container publication-heading-container">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">
-              <span class="publication-title-line">TDC: Sim-to-Real Transferable Directional Compliance</span>
-              <span class="publication-title-line">for Contact-Rich Manipulation</span>
-            </h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://yifei-y.github.io" target="_blank">Yifei Yang</a><sup>1</sup>,</span>
-                <span class="author-block">
-                  Anzhe Chen<sup>1</sup>,</span>
-                  <span class="author-block">
-                    Zhenjie Zhu<sup>1</sup>,</span>
-                    <span class="author-block">
-                      <a href="https://xukechun.github.io" target="_blank">Kechun Xu</a><sup>1</sup>,</span>
-                      <span class="author-block">
-                        <a href="https://yunxuanmao.github.io" target="_blank">Yunxuan Mao</a><sup>1</sup>,</span>
-                        <span class="author-block">
-                          Yufei Wei<sup>1</sup>,</span>
-                          <br>
-                          <span class="author-block">
-                            Lu Chen<sup>2</sup>,</span>
-                            <span class="author-block">
-                              Rong Xiong<sup>1,2</sup>,</span>
-                              <span class="author-block">
-                                <a href="https://ywang-zju.github.io" target="_blank">Yue Wang</a><sup>1</sup>
-                  </span>
-                  </div>
+    <section class="page-section section-tinted" id="abstract" aria-labelledby="abstract-title">
+      <div class="container">
+        <h2 id="abstract-title">Abstract</h2>
+        <div class="prose"><p>Contact-rich manipulation requires robots to regulate both motion and interaction forces, yet achieving adaptive compliance remains a fundamental challenge. Learning from real-world data is costly and risky, while simulation-based approaches struggle with the sim-to-real gap in contact dynamics; existing sim-to-real methods either require real-world adaptation or sacrifice adaptive compliance by relying on isotropic compliant controllers. Our key insight is that force regulation decomposes into a time-varying but simulation-transferable directional component and a dynamics-sensitive but manually tunable magnitude component. We instantiate this directional component as two policy outputs, a task frame and a control mode vector, predicted by a visuomotor policy adapted from a pre-trained VLA model and trained via imitation learning on automatically generated simulation demonstrations. At deployment, an admittance controller integrates these predictions with human-specified stiffness and target wrench values to realize adaptive compliance. Our approach achieves adaptive compliance using only simulation data and can benefit from large-scale VLA pre-training. Extensive real-world experiments on four contact-rich tasks, microwave opening, peg-in-hole insertion, whiteboard wiping, and door opening, demonstrate strong task success rates and robustness to external disturbances.</p></div>
+        <figure class="paper-figure teaser-figure">
+          <img src="static/images/teaser.jpg" alt="Overview of TDC for sim-to-real contact-rich manipulation">
+        </figure>
+      </div>
+    </section>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Zhejiang Humanoid Robot Innovation Center</span>
-                  </div>
+    <section class="page-section" id="method" aria-labelledby="method-title">
+      <div class="container">
+        <h2 id="method-title">Method</h2>
+        <figure class="paper-figure framework-figure">
+          <img src="static/images/framework.jpg" alt="TDC framework: simulation demonstrations, visuomotor policy training, and deployment with an admittance controller" loading="lazy">
+        </figure>
+        <div class="prose"><p>Real objects are scanned into simulated scenes, where a privileged expert generates demonstrations and retains only successful rollouts. A visuomotor policy built on a pretrained VLA model jointly predicts end-effector poses, task frame orientations, and control mode vectors; new output heads are randomly initialized while original weights are inherited. At deployment, an admittance controller combines policy predictions with operator-tuned stiffness and force setpoints for adaptive compliance.</p></div>
+      </div>
+    </section>
 
-                  <div class="is-size-3 publication-authors">
-                    <span class="author-block">CoRL 2026</span>
-                  </div>
+    <section class="page-section section-tinted" id="sim-data" aria-labelledby="sim-title">
+      <div class="container">
+        <h2 id="sim-title">Sim Data Generation</h2>
+        <div class="prose"><p>We leverage privileged states in simulation to build an expert policy. The expert policy switches behavior based on the contact state: During free motion, it simply tracks object-centric key poses. During contact interaction, it executes task-specific motion rules designed to satisfy contact constraints. This allows us to automatically generate large-scale, high-quality demonstrations across diverse tasks.</p></div>
+        <div class="demo-grid">
+        <figure class="demo-card">
+          <video controls muted autoplay loop playsinline preload="metadata" aria-label="Simulation demonstration: Microwave opening">
+            <source src="static/videos/sim_demos/microwave_opening.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="static/videos/sim_demos/microwave_opening.mp4">Download the video</a>.
+          </video>
+          <figcaption>Microwave Opening</figcaption>
+        </figure>
+        <figure class="demo-card">
+          <video controls muted autoplay loop playsinline preload="metadata" aria-label="Simulation demonstration: Peg-in-hole insertion">
+            <source src="static/videos/sim_demos/peg_in_hole.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="static/videos/sim_demos/peg_in_hole.mp4">Download the video</a>.
+          </video>
+          <figcaption>Peg-in-Hole Insertion</figcaption>
+        </figure>
+        <figure class="demo-card">
+          <video controls muted autoplay loop playsinline preload="metadata" aria-label="Simulation demonstration: Whiteboard wiping">
+            <source src="static/videos/sim_demos/whiteboard_wiping.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="static/videos/sim_demos/whiteboard_wiping.mp4">Download the video</a>.
+          </video>
+          <figcaption>Whiteboard Wiping</figcaption>
+        </figure>
+        <figure class="demo-card">
+          <video controls muted autoplay loop playsinline preload="metadata" aria-label="Simulation demonstration: Door opening">
+            <source src="static/videos/sim_demos/door_opening.mp4" type="video/mp4">
+            Your browser does not support embedded video. <a href="static/videos/sim_demos/door_opening.mp4">Download the video</a>.
+          </video>
+          <figcaption>Door Opening</figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2602.14174.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- ArXiv abstract Link -->
-                    <span class="link-block">
-                      <a href="https://arxiv.org/abs/2602.14174" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>arXiv</span>
-                    </a>
-
-                  <!-- Github link -->
-                  <!-- <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a> -->
-                </span>
-
-                
-              </span>
+    <section class="page-section experiments-section" id="real-world" aria-labelledby="experiments-title">
+      <div class="container">
+        <h2 id="experiments-title">Real-World Experiments</h2>
+        <figure class="experiment-legend">
+          <div class="experiment-legend-scroll">
+          <a href="static/images/legend.png" target="_blank" rel="noopener noreferrer" aria-label="Open the video annotation legend at full size">
+            <img src="static/images/legend.png" alt="Video annotations: predicted task frame; force along the x, y, and z axes of the task frame; trajectory markers; shaded disturbance period" loading="lazy">
+          </a>
+          </div>
+          <figcaption>Swipe to view the full legend, or tap to enlarge.</figcaption>
+        </figure>
+        <div class="experiment-tasks" role="group" aria-label="Experiment task">
+          <button type="button" data-task="ww" aria-pressed="true">Whiteboard Wiping</button>
+          <button type="button" data-task="ph" aria-pressed="false">Peg-in-Hole Insertion</button>
+          <button type="button" data-task="mo" aria-pressed="false">Microwave Opening</button>
+          <button type="button" data-task="do" aria-pressed="false">Door Opening</button>
+        </div>
+        <div class="experiment-conditions" role="group" aria-label="Experiment condition"></div>
+        <article class="experiment-player" aria-labelledby="experiment-name">
+          <header class="experiment-heading">
+            <div>
+              <p class="experiment-task-name">Whiteboard Wiping</p>
+              <h3 id="experiment-name">No Disturbance</h3>
             </div>
+            <div class="experiment-navigation">
+              <button type="button" class="experiment-arrow" data-direction="-1" aria-label="Previous experiment condition">&#8592;</button>
+              <span class="experiment-count" aria-label="Condition number">1 / 4</span>
+              <button type="button" class="experiment-arrow" data-direction="1" aria-label="Next experiment condition">&#8594;</button>
+            </div>
+          </header>
+          <div class="experiment-cameras">
+            <figure class="experiment-view">
+              <figcaption id="camera-one-label">Global Cam 1</figcaption>
+              <video id="experiment-camera-one" muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-labelledby="camera-one-label"></video>
+            </figure>
+            <figure class="experiment-view">
+              <figcaption id="camera-two-label">Global Cam 2</figcaption>
+              <video id="experiment-camera-two" muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-labelledby="camera-two-label"></video>
+            </figure>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Teaser video -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116085013614617&bvid=BV1ShZkB5EHj&cid=36087137630&p=1&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+          <figure class="experiment-view experiment-force">
+            <figcaption id="force-label">Force in the Task Frame <span>x / y / z</span></figcaption>
+            <video id="experiment-force" muted playsinline preload="none" disablepictureinpicture disableremoteplayback aria-labelledby="force-label"></video>
+          </figure>
+          <div class="experiment-controls" role="group" aria-label="Synchronized video playback">
+            <button type="button" class="experiment-play" disabled>Play All</button>
+            <button type="button" class="experiment-restart" disabled aria-label="Replay all videos">&#8634; Replay</button>
+            <input class="experiment-progress" type="range" min="0" max="1" value="0" step="0.1" aria-label="Experiment playback position" disabled>
+            <output class="experiment-time" aria-live="off">0:00 / 0:00</output>
           </div>
-        </div>
+          <p class="experiment-status" role="status" aria-live="polite">Loading experiment…</p>
+        </article>
+        <noscript><p class="prose">Enable JavaScript to browse and play the synchronized experiment videos.</p></noscript>
       </div>
-    </div>
-  </div>
-</section> -->
-<!-- End Teaser video -->
+    </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p class="mb-2">
-            Contact-rich manipulation requires robots to regulate both motion and interaction forces, yet achieving adaptive compliance remains a fundamental challenge. Learning from real-world data is costly and risky, while simulation-based approaches struggle with the sim-to-real gap in contact dynamics; existing sim-to-real methods either require real-world adaptation or sacrifice adaptive compliance by relying on isotropic compliant controllers. Our key insight is that force regulation decomposes into a time-varying but simulation-transferable directional component and a dynamics-sensitive but manually tunable magnitude component. We instantiate this directional component as two policy outputs, a task frame and a control mode vector, predicted by a visuomotor policy adapted from a pre-trained VLA model and trained via imitation learning on automatically generated simulation demonstrations. At deployment, an admittance controller integrates these predictions with human-specified stiffness and target wrench values to realize adaptive compliance. Our approach achieves adaptive compliance using only simulation data and can benefit from large-scale VLA pre-training. Extensive real-world experiments on four contact-rich tasks, microwave opening, peg-in-hole insertion, whiteboard wiping, and door opening, demonstrate strong task success rates and robustness to external disturbances.
-          </p>
-          <br>
-          <figure class="image mt-0">
-            <img src="static/images/teaser.jpg" style="width: 100%; height: auto;">
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!-- Method -->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <h2 class="title is-3">Method</h2>
-        <div class="content has-text-justified">
-          <figure class="image mb-2">
-            <img src="static/images/framework.jpg" style="width: 100%; height: auto;">
-          </figure>
-          <p class="mb-2">
-          Real objects are scanned into simulated scenes, where a privileged expert generates demonstrations and retains only successful rollouts. A visuomotor policy built on a pretrained VLA model jointly predicts end-effector poses, task frame orientations, and control mode vectors; new output heads are randomly initialized while original weights are inherited. At deployment, an admittance controller combines policy predictions with operator-tuned stiffness and force setpoints for adaptive compliance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Method -->
-
-<!-- Sim Data Generation -->
-<section class="section hero is-small is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-3 has-text-centered">Sim Data Generation</h2>
-        <p class="content has-text-justified">
-          We leverage privileged states in simulation to build an expert policy. The expert policy switches behavior based on the contact state: During free motion, it simply tracks object-centric key poses. During contact interaction, it executes task-specific motion rules designed to satisfy contact constraints. This allows us to automatically generate large-scale, high-quality demonstrations across diverse tasks.
-        </p>
-        <div class="columns is-centered">
-          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
-            <source src="./static/videos/sim_demos/microwave_opening.mp4" type="video/mp4">
-          </video>
-          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
-            <source src="./static/videos/sim_demos/peg_in_hole.mp4" type="video/mp4">
-          </video>
-          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
-            <source src="./static/videos/sim_demos/whiteboard_wiping.mp4" type="video/mp4">
-          </video>
-          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
-            <source src="./static/videos/sim_demos/door_opening.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Sim Data Generation -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>
-@inproceedings{tdc,
+    <section class="page-section section-tinted citation-section" id="BibTeX" aria-labelledby="citation-title">
+      <div class="container">
+        <h2 id="citation-title">BibTeX</h2>
+        <pre tabindex="0" aria-label="BibTeX citation"><code>@inproceedings{tdc,
   title={TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation},
   author={Yifei Yang and Anzhe Chen and Zhenjie Zhu and Kechun Xu and Yunxuan Mao and Yufei Wei and Lu Chen and Rong Xiong and Yue Wang},
   booktitle={10th Annual Conference on Robot Learning (CoRL)},
   year={2026}
-}
-      </code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
+}</code></pre>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
+    <div class="container">
+      <p>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>, adapted from <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a>.
+      You are free to borrow the source of this website; please link back to this page.</p>
+      <p>This website is licensed under a <a rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
     </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
