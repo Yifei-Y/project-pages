@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>TDC</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+      <div class="container publication-heading-container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <span class="publication-title-line">TDC: Sim-to-Real Transferable Directional Compliance</span>
+              <span class="publication-title-line">for Contact-Rich Manipulation</span>
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yifei-y.github.io" target="_blank">Yifei Yang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  Anzhe Chen<sup>1</sup>,</span>
+                  <span class="author-block">
+                    Zhenjie Zhu<sup>1</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://xukechun.github.io" target="_blank">Kechun Xu</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://yunxuanmao.github.io" target="_blank">Yunxuan Mao</a><sup>1</sup>,</span>
+                        <span class="author-block">
+                          Yufei Wei<sup>1</sup>,</span>
+                          <br>
+                          <span class="author-block">
+                            Lu Chen<sup>2</sup>,</span>
+                            <span class="author-block">
+                              Rong Xiong<sup>1,2</sup>,</span>
+                              <span class="author-block">
+                                <a href="https://ywang-zju.github.io" target="_blank">Yue Wang</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Zhejiang University&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Zhejiang Humanoid Robot Innovation Center</span>
+                  </div>
+
+                  <div class="is-size-3 publication-authors">
+                    <span class="author-block">CoRL 2026</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2602.14174.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2602.14174" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a> -->
+                </span>
+
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=116085013614617&bvid=BV1ShZkB5EHj&cid=36087137630&p=1&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p class="mb-2">
+            Contact-rich manipulation requires robots to regulate both motion and interaction forces, yet achieving adaptive compliance remains a fundamental challenge. Learning from real-world data is costly and risky, while simulation-based approaches struggle with the sim-to-real gap in contact dynamics; existing sim-to-real methods either require real-world adaptation or sacrifice adaptive compliance by relying on isotropic compliant controllers. Our key insight is that force regulation decomposes into a time-varying but simulation-transferable directional component and a dynamics-sensitive but manually tunable magnitude component. We instantiate this directional component as two policy outputs, a task frame and a control mode vector, predicted by a visuomotor policy adapted from a pre-trained VLA model and trained via imitation learning on automatically generated simulation demonstrations. At deployment, an admittance controller integrates these predictions with human-specified stiffness and target wrench values to realize adaptive compliance. Our approach achieves adaptive compliance using only simulation data and can benefit from large-scale VLA pre-training. Extensive real-world experiments on four contact-rich tasks, microwave opening, peg-in-hole insertion, whiteboard wiping, and door opening, demonstrate strong task success rates and robustness to external disturbances.
+          </p>
+          <br>
+          <figure class="image mt-0">
+            <img src="static/images/teaser.jpg" style="width: 100%; height: auto;">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <figure class="image mb-2">
+            <img src="static/images/framework.jpg" style="width: 100%; height: auto;">
+          </figure>
+          <p class="mb-2">
+          Real objects are scanned into simulated scenes, where a privileged expert generates demonstrations and retains only successful rollouts. A visuomotor policy built on a pretrained VLA model jointly predicts end-effector poses, task frame orientations, and control mode vectors; new output heads are randomly initialized while original weights are inherited. At deployment, an admittance controller combines policy predictions with operator-tuned stiffness and force setpoints for adaptive compliance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+<!-- Sim Data Generation -->
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Sim Data Generation</h2>
+        <p class="content has-text-justified">
+          We leverage privileged states in simulation to build an expert policy. The expert policy switches behavior based on the contact state: During free motion, it simply tracks object-centric key poses. During contact interaction, it executes task-specific motion rules designed to satisfy contact constraints. This allows us to automatically generate large-scale, high-quality demonstrations across diverse tasks.
+        </p>
+        <div class="columns is-centered">
+          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/microwave_opening.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/peg_in_hole.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/whiteboard_wiping.mp4" type="video/mp4">
+          </video>
+          <video style="width:20%; height:auto; margin: 1%;" controls muted loading="lazy" autoplay loop playsinline>
+            <source src="./static/videos/sim_demos/door_opening.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Sim Data Generation -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+@inproceedings{tdc,
+  title={TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation},
+  author={Yifei Yang and Anzhe Chen and Zhenjie Zhu and Kechun Xu and Yunxuan Mao and Yufei Wei and Lu Chen and Rong Xiong and Yue Wang},
+  booktitle={10th Annual Conference on Robot Learning (CoRL)},
+  year={2026}
+}
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
